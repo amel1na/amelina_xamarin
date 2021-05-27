@@ -10,7 +10,10 @@ namespace amelina_xamarin
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            MainPage = new FirstPage();
+            //MainPage = new Page1();
+            MainPage = new NavigationPage(new FirstPage());
         }
 
         protected override void OnStart()
